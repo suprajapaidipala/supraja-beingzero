@@ -8,7 +8,7 @@ app.use(express.static('frontend'))
 app.get('/', (req, res) => res.sendFile(__dirname+'/frontend/html/home.html'))
 app.get('/login', (req, res) => res.send('login'))
 app.get('/register', (req, res) => res.send('Register'))
-app.get('/data', (req, res) => res.json(student1))
+app.get('/data', (req, res) => res.json(student))
 
 var student = {name: "supraja",college: "VNRVJIET", regno: "1243"}
 var student1 = {name: "hritik",college: "VNRVJIET", regno: "1243"}
